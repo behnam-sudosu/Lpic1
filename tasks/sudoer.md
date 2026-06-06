@@ -1,0 +1,2 @@
+# sudoer
+cat /etc/sudoers
