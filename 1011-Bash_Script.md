@@ -1,6 +1,6 @@
-# Bash Script  
+# Bash Script
 
-### function  
+### function
 
 ```bash
 myfunction(){
@@ -12,33 +12,33 @@ myfunction(){
 } 
 ```
 ```bash
-#put this command here  
-.bashrc  
+# put this command here
+.bashrc
 ```
 
----  
+---
 
-### list(array)  
+### list(array)
 
 ```bash
 mylist={lets learn linux}
-echo ${mylist[2]}  
+echo ${mylist[2]}
 ```
 ```bash
-all we write in script file  
+all we write in script file
 ```
 
----  
+---
 
-## script  
+## script
 
 ### help
 
 ```bash
-#space
+# space
 echo ""
 
-#`` ===>> you can add command
+# `` ===>> you can add command
 echo "ok now i'm in `pwd` path"
 
 $1 ===>> first argument
@@ -50,7 +50,7 @@ $? ===>> exit code
 ---
 
 ```bash
-#follow your script line after line
+# follow your script line after line
 bash file.sh
 chmod +x file1.sh
 ./file1.sh
@@ -84,29 +84,29 @@ vim file3.sh
 	echo "lets \vlearn \vlinx"
 ```
 ```bash
-file4.sh  
+file4.sh
 
 	mkdir test ; ls ; touch file1
 	sudo apt update && sudo apt upgrade
 	touch file1 || touch file2
 ```
 ```bash
-file5.sh  
+file5.sh
 
 	read -p "please inter your number" NUMBER
 	echo "your number is $NUMBER"
 ```
 
----  
+---
 
-### if  
+### if
 
 ```bash
 if
 then
 elif
 else
-fi  
+fi
 ```
 ```bash
 -ge ===>> greater or equal
@@ -122,7 +122,7 @@ fi
 -lt ===>> less than
 ```
 ```bash
-file6.sh  
+file6.sh
 
 	read -p "please enter your number" NUMBER
 		echo "your number is $NUMBER"
@@ -134,12 +134,12 @@ file6.sh
 	fi  
 ```
 ```bash
-file7.sh  
+file7.sh
 
 	read -p "please enter your pass" PASS
 	if test $PASS = reza
 	then
-		echo "welcome"  
+		echo "welcome"
 	else
 		echo "access deny"
 	fi
@@ -147,28 +147,28 @@ file7.sh
 ```bash
 file7.sh
 
-	#-s = dont't show password
+	# -s = dont't show password
 	read -s -p "please enter your pass" PASS
 	if test $PASS = reza
 	then
-		echo "welcome"  
+		echo "welcome"
 	else
 		echo "access deny"
 	fi
 ```
 
----  
+---
 
-### for  
+### for
 
 ```bash
-	for i in 
+	for i in
 	do
 		command
 	done
 ```
 ```bash
-file8.sh  
+file8.sh
 
 	for i in {1..5000}
 	do
@@ -176,7 +176,7 @@ file8.sh
 	done
 ```
 ```bash
-file9.sh  
+file9.sh
 
 	for i in {1..5000}
 	do
@@ -192,22 +192,23 @@ file10.sh
 		echo `cat $loop`
 		echo ""
 	done
+```
 
----  
+---
 
 ### more command
 
 ```bash
-#bash -x file1.sh
+# bash -x file1.sh
 debugging
 
-#cron, at, alias, systemd
+# cron, at, alias, systemd
 always check
 
-#always program run
+# always program run
 systemd
 
 echo $PATH
-#it's better put script here
+# it's better put script here
 /usr/local/bin
 ```
