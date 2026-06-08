@@ -70,6 +70,13 @@
 	iface enp9s0 inet static
 		address 192.168.1.130
 		netmask 255.255.255.0
+
+# set sub network
+
+auto enp9s0:0
+iface enp9s0:0 inet static
+	address 192.168.1.129
+	netmask 255.255.255.0
 	
 
 # secure

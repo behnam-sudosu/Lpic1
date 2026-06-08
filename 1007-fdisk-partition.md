@@ -221,3 +221,30 @@ du -sha
 #h = human readable
 du -h
 ```
+
+# best practice for partion disk
+```bash
+desktop
+
+/boot ===>> 500MB
+/swap ===>> 8Gb
+/ ===>> all free
+```
+```bash
+network workstation
+
+/boot ===>> 500MB
+/swap ===>> 8GB
+/home ===>> network
+/ ===>> 40GB
+```
+```bash
+server
+/boot ===>> 500MB
+/swap ===>> 8GB
+/var ===>> 100GB
+/usr ===>> 10GB write protect (ro)
+/home ===>> network
+/opt ===>> network
+/ ===>> all free
+```
