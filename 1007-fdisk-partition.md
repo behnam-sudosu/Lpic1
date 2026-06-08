@@ -79,32 +79,15 @@ gdisk /dev/sdb
 ```
 
 ```bash
-# help
-?
 
-# delete a partion
-d
-
-# change a partition's name
-c
-
-# list known partition types
-l
-
-# add a new partition
-n
-
-# print the partition table
-p
-
-# quit without saving changes
-q
-
-# change a partion's code
-t
-
-# write table to disk and exit
-w
+	       help		        |        delete a partion	    |        add a new partition     
+	        ?		        |		        d		        |  		         n			     
+--------------------------------------------------------------------------------------------------------------
+   change a partion's code  |    change a partion's code    |     quit without saving changes
+	        t	            |		        t			    |	             q	                   
+--------------------------------------------------------------------------------------------------------------
+  print the partition table |  list known partition types   |     write table to disk and exit
+	        p			    |			    l			    |				 w
 ```
 ### all command same as fdisk
 
@@ -226,9 +209,8 @@ du -h
 
 # best practice for partion disk
 
-```bash
 desktop
-
+```bash
 /boot ===>> 500MB
 /swap ===>> 8Gb
 / ===>> all free
@@ -236,9 +218,8 @@ desktop
 
 ---
 
-```bash
 network workstation
-
+```bash
 /boot ===>> 500MB
 /swap ===>> 8GB
 /home ===>> network
@@ -247,8 +228,8 @@ network workstation
 
 ---
 
-```bash
 server
+```bash
 /boot ===>> 500MB
 /swap ===>> 8GB
 /var ===>> 100GB

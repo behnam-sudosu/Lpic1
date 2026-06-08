@@ -22,21 +22,21 @@ chgrp ===>> change group
 ```
 ```bash
 # u = user
-chmod u+w file1
+chmod u+w FILE_NAME
 
 # take w from
-chmod u-w file1
+chmod u-w FILE_NAME
 
 # g = group
-chmod g+wx file1
+chmod g+wx FILE_NAME
 
 # o = others
-chmod o+rwx file1
+chmod o+rwx FILE_NAME
 
-chmod u+rwx,g-rx,o-r file1
+chmod u+rwx,g-rx,o-r FILE_NAME
 
 # a=all
-chmod a=wx file1
+chmod a=wx FILE_NAME
 
 # all
 chmod all=rwx
@@ -60,7 +60,7 @@ permision	4	2	1
 
 ---
 
-### second permison
+### second permision
 
 ```bash
 suid ===>> for user
@@ -84,13 +84,13 @@ umask ===>> give all permision
 ### group and owner change
 
 ```bash
-chown behnam:root file1
-chown behnam: file1
+chown USER_NAME:root FILE_NAME
+chown USER_NAME: FILE_NAME
 
 # all file in directory change to root owner
 chown root FILE_NAME -R
 
-chgroup milad file1
+chgroup USER_NAME FILE_NAME
 
 # you can find passwd
 which passwd
@@ -129,5 +129,5 @@ diff suid7.txt suid8.txt
 
 ```bash
 /etc/sudoers.d
-    behnam ALL=(ALL) NOPASSWD:ALL
+    USER_NAME ALL=(ALL) NOPASSWD:ALL
 ```

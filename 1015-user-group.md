@@ -1,9 +1,9 @@
 # users
 
 ```bash
-id NAME_USER ===>> say id and uid and group id
+id USER_NAME ===>> say id and uid and group id
 last ===>> shows recently logins (auditing)
-passwd behnam ===>> changing user passwords
+passwd USER_NAME ===>> changing user passwords
 passwd ===>> change curent user
 cat /etc/passwd ===>> show all users
 cat /etc/group ===>> show all groups
@@ -18,14 +18,17 @@ hint: id and user if have 0 can do everything
 ```bash
 # change hostname
 /etc/hosts
-/etc/hostname 
-hostnamectl set-hostname NAME
+/etc/hostname
+hostnamectl set-hostname USER_NAME
 ```
+
+---
+
 ### add user
 
 ```bash
 # adding user in linux
-useradd or adduser NAME-USER
+useradd or adduser USER_NAME
 
 # make home directory
 adduser -m
@@ -47,8 +50,8 @@ useradd -s ===>> "/bin/bash"
 # show users
 cat /etc/passwd
 
-# only show behnam
-cat /etc/passwd | grep -i NMAE_USER
+# only show USER_NAME
+cat /etc/passwd | grep -i USER_NAME
 ```
 
 ---
@@ -60,7 +63,7 @@ cat /etc/passwd | grep -i NMAE_USER
 usermod
 
 # set comment
-usermod -c "admin" NAME_USER
+usermod -c "admin" USER_NAME
 
 # set bash for user
 usermod -s "/bin.bash"
@@ -69,19 +72,19 @@ usermod -s "/bin.bash"
 usermod -d
 
 # lock the user
-usermod -L NAME_USER
+usermod -L USER_NAME
 
 # unlock user (after that reset password)
-usermod -U NAME_USER
+usermod -U USER_NAME
 
 # change primary group
-usermod -g adm NAME_USER
+usermod -g adm USER_NAME
 
 # join another groups
-usermod -G sudo NMAE_USER
+usermod -G sudo USER_NAME
 
 # join user to group sudoers nad append
-usermod -aG sudo NAME_USER
+usermod -aG sudo USR_NAME
 ```
 
 ---
@@ -90,13 +93,13 @@ usermod -aG sudo NAME_USER
 
 ```bash
 # deleting a user
-userdel NAME_USER
+userdel USER_NAME
 
 # remove home directory and mail spool
-userdel -r NAME_USER
+userdel -r USER_NAME
 
 # force removal of files, even if not owned by user
-userdel -f NAME_USER
+userdel -f USER_NAME
 ```
 
 ---
@@ -107,7 +110,7 @@ userdel -f NAME_USER
 cat /etc/group
 
 # adding groups to linux
-groupadd soc
+groupadd USER_GROUP
 
 # change id and name group
 group -g 1005
@@ -125,7 +128,7 @@ groupdel
 
 ```bash
 # change name group1
-groupmod -n newgroup group1
+groupmod -n newgroup NAME_GROUP
 
 # change id
 groupmod -g 1010 newgroup
@@ -137,7 +140,7 @@ groupmod -g 1010 newgroup
 
 ```bash
 # delete group
-groupdel group1
+groupdel NAME_GROUP
 ```
 
 ---
@@ -150,7 +153,7 @@ cat /etc/sudoers
 # make file name your user
 cat /etc/sudoers.d/
 	# no need password for login to root
-	NAME_USER ALL=(ALLNOPASSD:ALL)
+	USER_NAME ALL=(ALLNOPASSD:ALL)
 ```
 
 ---
@@ -159,11 +162,11 @@ cat /etc/sudoers.d/
 
 ```bash
 # show information behnam and last modify
-chage -l NAME_USER
-chage NAME_USER
+chage -l USER_NAME
+chage USER_NAME
 
 # like a grep in file passwd
-getent passwd NAME_USER
+getent passwd USER_NAME
 ```
 
 ---

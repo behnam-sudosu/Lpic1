@@ -93,7 +93,7 @@ file4.sh
 ```bash
 file5.sh
 
-	read -p "please inter your number" NUMBER
+	read -p "please enter your number" NUMBER
 	echo "your number is $NUMBER"
 ```
 

@@ -1,21 +1,21 @@
 # runlevel
 
 ```bash
- runlevel  		|				debian			   |		redhat  
+ 	runlevel  		|		debian			   |		redhat  
 ------------------------------------------------------------------------------------------
-	0			|				halt			   |  		halt
+		0			|		halt			   |  		halt
 ------------------------------------------------------------------------------------------
-	1 			|	    	    single user	       | 		single user
+		1 			|	    single user	       | 		single user
 ------------------------------------------------------------------------------------------
-	2			|	   		    multi user, gui    |  		multi user, without GUI
+		2			|	    multi user, gui    |  		multi user, without GUI
 ------------------------------------------------------------------------------------------
-	3			|	   		    full multi user    | 		multiuser without network
+		3			|	    full multi user    | 		multiuser without network
 ------------------------------------------------------------------------------------------
-	4   		|             	nothing            |        nothing
+		4   		|       nothing            |        nothing
 ------------------------------------------------------------------------------------------
-	5   		|               full multi user	   |        multi user, with GUI
+		5   		|       full multi user	   |        multi user, with GUI
 ------------------------------------------------------------------------------------------
-	6   		|          	    reboot             |        reboot
+		6   		|       reboot             |        reboot
 ```
 
 ---
@@ -77,7 +77,7 @@ etc/rc
 # for systemd
 systemctl
 systemctl list ===>> show all list service
-systemctl start ssh
+systemctl start SERVICE_NAME
 
 # for upstart
 initctl
