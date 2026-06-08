@@ -1,4 +1,5 @@
 # Shortcuts
+
 ```bash
 ctrl + c ===>> Halts the current command
 ctrl + d ===>> Logout the current session

@@ -114,18 +114,18 @@ find / -perm -u+s > suid8.txt
 find / -perm -g+s > suid8.txt
 
 # make dif
-	find / -perm -u+s > suid7.txt
+find / -perm -u+s > suid7.txt
 
-	# after six mounth
-	find / -perm -g+s > suid8.txt
-	
-	# find file why change permission
-	diff suid7.txt suid8.txt
+# after six mounth
+find / -perm -g+s > suid8.txt
+
+# find file why change permission
+diff suid7.txt suid8.txt
 ```
 
 ---
 
-# sodoer
+# sudoer
 
 ```bash
 /etc/sudoers.d

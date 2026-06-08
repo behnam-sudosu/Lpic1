@@ -225,6 +225,7 @@ du -h
 ```
 
 # best practice for partion disk
+
 ```bash
 desktop
 

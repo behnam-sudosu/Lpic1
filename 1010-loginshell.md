@@ -1,6 +1,7 @@
-# logshel
+# logshell
 
-### loginshel
+### loginshell
+
 ```bash
 # global
 /etc/profile

@@ -101,7 +101,9 @@ service ufw status
 
 ### how type reboot
 
-	var/log/wtmp
+```bash
+var/log/wtmp
+```
 
 # make file systemd service for linux
 
