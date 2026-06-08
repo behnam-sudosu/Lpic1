@@ -19,7 +19,7 @@ systemctl get-default runlevel
 ### start, stop, restart, reload, disable, enable, kill
 
 ```bash
-#is better use systemctl reload ssh
+# is better to use systemctl reload ssh
 systemctl restart ssh
 systemctl stop ssh
 systemctl reload ssh
@@ -36,7 +36,7 @@ systemctl is-enabled ssh
 ### install ssh
 
 ```bash
-sudo apt install openssh-server  
+sudo apt install openssh-server
 ```
 
 ---
@@ -52,20 +52,20 @@ systemctl
 ### save systemd file directory
 
 ```bash
-#first direction save systemd
+# first direction save systemd
 etc/systemd/system  
-	#name service with .service
+	# name service with .service
 	file.service
 
 
-#second directory save systemd
+# second directory save systemd
 /usr/lib/systemd/system
-	#name service with .service
+	# name service with .service
 	file.service
 
-#for login user
+# for login user
 /etc/profile.d
-	#name service eith .sh
+	# name service eith .sh
 ```
 
 ---
@@ -73,19 +73,19 @@ etc/systemd/system
 ### systemctl information
 
 ```bash
-#show where is load
+# show where is load
 Loaded: loaded (/usr/lib/systemd/system/nftables.service; disabled; preset: enabled)
 
-#memory usage
+# memory usage
 Mem peak: 2.9M
 
-#cpu usage
+# cpu usage
 CPU: 38ms
 
-#show logs
+# show logs
 Jan 04 13:49:24 srv1 systemd[1]: Starting nftables.service - nftables...
 
-#show logs
+# show logs
 Jan 04 13:49:24 srv1 systemd[1]: Finished nftables.service - nftables...
 ```
 
@@ -105,7 +105,7 @@ service ufw status
 
 # make file systemd service for linux
 
-touch file.service  
+touch file.service
 
 ```bash
 [Unit]
@@ -135,6 +135,6 @@ save the file
 ---
 
 ```bash
-#reload all services
+# reload all services
 systemctl daemon-reload
 ```

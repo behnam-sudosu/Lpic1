@@ -18,7 +18,7 @@
 	6   		|          	    reboot             |        reboot
 ```
 
----  
+---
 
 ### change runlevel
 
@@ -43,11 +43,11 @@ init 5 ===>> change runlevel
 ### script of service
 
 ```bash
-#you can stop, start, reload, status service
+# you can stop, start, reload, status service
 /etc/init.d/lvm start
 ./lvm start
 
-#old os
+# old os
 /etc/inittab
 ```
 
@@ -56,7 +56,7 @@ init 5 ===>> change runlevel
 ### set runlevel
 
 ```bash
-etc/init.d  
+etc/init.d
 	s ===>> start
 	k ===>> kill
 ```
@@ -74,19 +74,19 @@ etc/rc
 ### commands
 
 ```bash
-#for systemd
+# for systemd
 systemctl
 systemctl list ===>> show all list service
 systemctl start ssh
 
-#for upstart
+# for upstart
 initctl
 /etc/init ===>> config file
 
-#old cammand
+# old cammand
 service sendmail stop
 
-#show all start and kill service
+# show all start and kill service
 chkconfig --list ===>> centos
 service --status-all ===>> debian
 
@@ -95,7 +95,7 @@ apt install chkconfig
 chkconfig SERVICE_NAME on
 chkconfig SERVICE_NAME off
 
-#reload all service
+# reload all service
 systemctl daemon-reload
 ```
 
@@ -104,20 +104,20 @@ systemctl daemon-reload
 ### save systemd file directory
 
 ```bash
-#script of service
+# script of service
 /etc/init.d
 
-#first direction save systemd
+# first direction save systemd
 /etc/systemd/system  
-	#name service with .service
+	# name service with .service
 	file.service
 
-#second directory save systemd
+# second directory save systemd
 /usr/lib/systemd/system
 	#name service with .service
 	file.service
 
-#for login user
+# for login user
 /etc/profile.d
-	#name service with .sh
+	# name service with .sh
 ```
