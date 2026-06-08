@@ -1,29 +1,28 @@
-# logshel  
+# logshel
 
-### loginshel  
-
+### loginshel
 ```bash
-#global
+# global
 /etc/profile
 
-#put script and excute (everyone login email send to me)
-/etc/profile.d/*.sh 
+# put script and excute (everyone login email send to me)
+/etc/profile.d/*.sh
 
-#you can change it in your home
+# you can change it in your home
 /home/behnam/.profile
 ```
 
----  
+---
 
-### nonloginshel  
+### nonloginshell
 
 ```bash
-#global
+# global
 /etc/bash.bashrc
 
-#centos
+# centos
 /etc/bashrc
 
-#you can change it in your home
+# you can change it in your home
 /home/behnam/.bashrc
 ```
