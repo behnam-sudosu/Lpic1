@@ -154,6 +154,8 @@ route ===>> show gateway
 route -n ===>> show default gatway
 route add default gw 192.168.1.100
 route del default gw 192.168.1.100  
+route add default gw 192.168.1.100 dev ens37
+route del default gw 192.168.1.100 dev ens37
 ```
 
 ---  
