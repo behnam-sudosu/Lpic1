@@ -27,10 +27,10 @@
 		    ens3:
 		      dhcp4: no
 		      addresses:
-			- 192.168.121.221/24
-		      gateway4: 192.168.121.1
-		      nameservers:
-			  addresses: [8.8.8.8, 1.1.1.1]
+				- 192.168.121.221/24
+				gateway4: 192.168.121.1
+				nameservers:
+				addresses: [8.8.8.8, 1.1.1.1]
 			  
 		netplan try or netplan apply
 		
