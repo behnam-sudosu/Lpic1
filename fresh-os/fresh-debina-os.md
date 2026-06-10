@@ -7,6 +7,9 @@
 	sudo apt install net-tools
 	sudo apt install tmux, byobu
 	sudo apt install tree
+	hostnamectl set-hostname srv2
+	vim /etc/hosts
+	vim /etc/hostname
 	change user as sudoer
 		sudo visudo ===>> username ALL=(ALL:ALL) ALL
 		sudo usermod -aG sudo debian
