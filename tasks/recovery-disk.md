@@ -1,6 +1,6 @@
 # recovery disk
 
-### ext  
+### ext
 
 ```bash
 fsck ===>> check disk for error
@@ -27,14 +27,14 @@ dumpe2fs ===>> check disk for error
 dumpe2fs /dev/sdb1 ===>> show superblock
 ```
 
----  
+---
 
-### xfs  
+### xfs
 
 ```bash
 xfsdump
 xfsrepair
 xfsinfo
 xfsrestore
-xfscheck  
+xfscheck
 ```

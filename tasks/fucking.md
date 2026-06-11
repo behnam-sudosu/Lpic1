@@ -1,4 +1,7 @@
-fucking
-	vim /home/behnam/.bashrc
-		alias fucking='sudo'	
-		fucking reboot
+# fucking
+
+```bash
+vim /home/behnam/.bashrc
+	alias fucking='sudo'	
+	fucking reboot
+```

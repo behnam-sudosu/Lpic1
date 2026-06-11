@@ -1,11 +1,11 @@
-# fail2ban  
+# fail2ban
 
-### 1- install fail2ban  
+### 1- install fail2ban
 
 ```bash
 sudo apt update && sudo apt install fail2ban  
 ```
----  
+---
 
 ### 2- enable service
 

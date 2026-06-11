@@ -1,4 +1,4 @@
-# oh my zsh  
+# oh my zsh
 
 ```bash
 sudo apt update
@@ -7,7 +7,11 @@ sudo apt install curl
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 ```
+
+---
+
 ### install locally
+
 ```bash
 git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git ~/backup.oh-my-bash
 # all file is here
@@ -29,7 +33,8 @@ plugins=(git bash-completion)
 # Load oh-my-bash
 source $OSH/oh-my-bash.sh
 ```
----  
+
+---
 
 #### themes
 
@@ -56,7 +61,7 @@ vim ~/.zshrcbashrc
 	OSH_THEM="avit" #
 ```
 
----  
+---
 
 ### reload
 

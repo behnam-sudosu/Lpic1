@@ -1,19 +1,20 @@
-# rsyslog  
+# rsyslog
 
-### server  
+### server
 
 ```bash
 sudo apt update && sudo apt install rsyslog
-
-#show more information
+```
+```bash
+# show more information
 rsyslogd -v
-
-
+```
+```bash
 systemctl status rsyslog
 sudo systemctl start rsyslog
-
+```
+```bash
 sudo vim /etc/rsyslog.conf
-
     # provides UDP syslog reception
     #module(load="imudp")
     #input(type="imudp" port="514")
@@ -21,61 +22,62 @@ sudo vim /etc/rsyslog.conf
     # provides TCP syslog reception
     #module(load="imtcp")
     #input(type="imtcp" port="514")
-    #uncomment TCP and UDP  
+    #uncomment TCP and UDP
 ```
 ```bash
-#allow ufw
+# allow ufw
 sudo ufw allow 514/tcp
-sudo systemctl restart rsyslog.service  
+sudo systemctl restart rsyslog.service
 ```
 
----  
+---
 
-### client  
+### client
 
 ```bash
 sudo apt update && sudo apt install rsyslog
-
-#show more information
+```
+```bash
+# show more information
 rsyslogd -v
-
-
+```
+```bash
 systemctl status rsyslog
 sudo systemctl start rsyslog
-
-
+```
+```bash
 sudo vim /etc/rsyslog.d/50-default.conf
 
     *.* @@0.0.0.0:514
     *.* @@192.168.122.235
-    cron.* @@192.168.122.237:514  
+    cron.* @@192.168.122.237:514
 ```
 ```bash
-sudo systemctl restart rsyslog.service  
+sudo systemctl restart rsyslog.service
 ```
 
----  
+---
 
-### test  
+### test
 
 ```bash
 logger 'test from client'
-sudo tail /var/log/syslog  
+sudo tail /var/log/syslog
 ```
 
----  
+---
 
-### ELK  
+### ELK
 
 ```bash
 elastic search log stash kibana
-vim /etc/logrotate.conf  
+vim /etc/logrotate.conf
 ```
 
----  
+---
 
 
-### make file  
+### make file
 
 ```bash
 sudo touch /var/log/cron.log

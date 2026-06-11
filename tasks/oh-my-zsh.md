@@ -1,4 +1,4 @@
-# oh my zsh  
+# oh my zsh
 
 ```bash
 sudo apt update
@@ -8,7 +8,11 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"  
 ```
+
+---
+
 ### install locally
+
 ```bash
 git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/backup.oh-my-zsh
 # all file is here
@@ -17,9 +21,9 @@ git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/backup.oh-my-zsh
 ~/.oh-my-zsh
 # command for execute
 sh ~/.oh-my-zsh/tools/install.sh --unattended
-
 ```
----  
+
+---
 
 #### themes
 
@@ -46,7 +50,7 @@ vim ~/.zshrc
 	ZSH_THEME="avit" #
 ```
 
----  
+---
 
 ### reload
 

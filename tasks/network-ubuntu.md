@@ -1,6 +1,6 @@
 # config network Ubuntu
 
-### set ip static for ubuntu  
+### set ip static for ubuntu
 
 ```bash
 cd /etc/netplan/*.yaml
@@ -11,7 +11,7 @@ cd /etc/netplan/*.yaml
         rendere: NetworkManager
         etherents:
         enp0s25:
-            dhcp4: false 
+            dhcp4: false
             addresses:
             - 192.168.1.100/24
             gateway4: 192.168.1.1
@@ -20,31 +20,31 @@ cd /etc/netplan/*.yaml
 ```
 ```bash
 save the file
-sudo netplan try or sudo netplan apply 
+sudo netplan try or sudo netplan apply
 ```
 
----  
+---
 
-### Set NameServers  
+### Set NameServers
 
 ```bash
-    cd /etc
-    resolv.conf is a link in ubuntu 22.4
-    remove resolv.conf
-    sudo unlink resolv.conf
-    touch /etc/resolv.conf
-    vim resolv.conf
-        nameserver 8.8.8.8
-        nameserver 4.2.2.4
+cd /etc
+resolv.conf is a link in ubuntu 22.4
+remove resolv.conf
+sudo unlink resolv.conf
+touch /etc/resolv.conf
+vim resolv.conf
+    nameserver 8.8.8.8
+    nameserver 4.2.2.4
 ```
 ```bash
-    save the file
-    also you can add nameserver to /etc/netplan/*.yaml too
+save the file
+also you can add nameserver to /etc/netplan/*.yaml too
 ```
 
----  
+---
 
-### route  
+### route
 
 ```bash
 use route insted of getway
