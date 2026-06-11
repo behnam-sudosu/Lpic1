@@ -171,7 +171,7 @@ getent passwd USER_NAME
 
 ---
 
-### wrong add user
+### add user
 
 ```bash
 # change name
@@ -180,6 +180,6 @@ sudo usermod -l NEW_USER OLD_USER
 # change group
 sudo groupmod -n NEW_USER OLD_USER
 
-# change hoem directory
+# change home directory
 sudo usermod -d /home/NEW_USER -m NEW_USER
 ```

@@ -30,7 +30,7 @@ all we write in script file
 
 ---
 
-## script
+## scripts
 
 ### help
 
