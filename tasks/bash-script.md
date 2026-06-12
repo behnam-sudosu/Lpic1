@@ -99,8 +99,8 @@ second
 	done
 
 # show time
-for (( i = 1 ; i <= 10 ; i++ )); do
-	echo "The date and time is $(date)"
-	sleep 5
-done
+	for (( i = 1 ; i <= 10 ; i++ )); do
+		echo "The date and time is $(date)"
+		sleep 5
+	done
 ```
