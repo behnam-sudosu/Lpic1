@@ -1,17 +1,18 @@
 # fail2ban
 
-### 1- install fail2ban
+### install fail2ban
 
 ```bash
-sudo apt update && sudo apt install fail2ban  
+sudo apt update && sudo apt install fail2ban
 ```
 ---
 
-### 2- enable service
+### enable service
 
-cd /etc/fail2ban  
-cd /etc/fail2ban/filter.d ===>> config file all application  
-
+```bash
+cd /etc/fail2ban
+cd /etc/fail2ban/filter.d ===>> config file all application
+```
 ```bash
 # check service is active
 systemctl status fail2ban.service
@@ -19,13 +20,14 @@ systemctl status fail2ban.service
 systemctl enabled fail2ban.service
 ```
 
----  
+---
 
-### 3- make new file  
+### make new file
 
-touch /etc/fail2ban/jail.local  
-vim /etc/fail2ban/jail.local  
-
+```bash
+touch /etc/fail2ban/jail.local
+vim /etc/fail2ban/jail.local
+```
 ```bash
 [sshd]
 enabled = true
@@ -54,12 +56,13 @@ jail.conf
     [selinux-ssh]
             port = 3122
 ```
+```bash
 save the file
+```
+---
 
----  
-
-### 4- restart service fail2ban  
+### restart service fail2ban
 
 ```bash
 sytemcttl restart fail2ban.service
-```  
+```

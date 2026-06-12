@@ -1,20 +1,26 @@
 # desktop
 
-	sudo apt install slim
-	sudo apt install xdm
-	sudo apt install lxdm
-	sudo apt install sddm
-	sudo apt install gdm3
-	sudo apt install lightdm
+### desktop invirement 
 
----  
+```bash
+sudo apt install slim
+sudo apt install xdm
+sudo apt install lxdm
+sudo apt install sddm
+sudo apt install gdm3
+sudo apt install lightdm
+```
 
-	dpkg-reconfigure lightdm
-	sudo systemctl suspend
-	sudo apt install gnome-session-flashback
+---
 
---- 
+### commands
 
-	sudo systemctl disable gdm
-	sudo systemctl enable lightdm
-		
+```bash
+dpkg-reconfigure lightdm
+sudo systemctl suspend
+sudo apt install gnome-session-flashback
+```
+```bash
+sudo systemctl disable gdm
+sudo systemctl enable lightdm
+```
