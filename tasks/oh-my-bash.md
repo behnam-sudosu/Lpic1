@@ -14,12 +14,16 @@ bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/too
 
 ```bash
 git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git ~/backup.oh-my-bash
+
 # all file is here
 ~/backup.oh-my-bash
+
 # change name to
 ~/.oh-my-bash
+
 # command for execute
 vim ~/.bashrc
+
 # add these command at the end of file
 # Path to your oh-my-bash installation
 export OSH="~/.oh-my-bash"

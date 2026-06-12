@@ -1,4 +1,6 @@
-# command for memory free
+# memory
+
+### command for free memory
 
 ```bash
 chmem -e 1G ===>> use memory

@@ -25,8 +25,8 @@ tmux kill-session -t NAME_SESSION
 ctrl + d
 ```
 ```bash
-note: you can use it for ping to check ping if you have packet lost
-note: bring someone on server and teach them
+hint: you can use it for ping to check ping if you have packet lost
+hint bring someone on server and teach them
 ```
 
 # byobu

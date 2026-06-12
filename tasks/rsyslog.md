@@ -3,7 +3,7 @@
 ### server
 
 ```bash
-sudo apt update && sudo apt install rsyslog
+sudo apt install rsyslog
 ```
 ```bash
 # show more information

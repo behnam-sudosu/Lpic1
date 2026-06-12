@@ -1,5 +1,7 @@
 # quata
 
+### quata help you for limit user have storage
+
 ```bash
 apt install quota
 ```

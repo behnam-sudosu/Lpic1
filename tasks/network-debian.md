@@ -11,8 +11,8 @@ vim interfaces
 auto lo
 iface lo inet loopback
 # The primary network interface
-auto ens36
-iface ens36 inet static
+auto ens37
+iface ens37 inet static
         address 192.168.1.100/24
         netmask 255.255.255.0
         gateway 192.168.1.1
@@ -28,8 +28,8 @@ sudo systemctl restart networking.service
 ### set ip with sub
 
 ```bash
-auto ens36:0
-iface ens36:0 inet static
+auto ens37:0
+iface ens37:0 inet static
         address 192.168.1.101/24
         netmask 255.255.255.0
 ```

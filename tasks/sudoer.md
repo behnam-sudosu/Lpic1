@@ -1,5 +1,7 @@
 # sudoer
 
+### make user to sudoers
+
 ```bash
 cat /etc/sudoers
 ```

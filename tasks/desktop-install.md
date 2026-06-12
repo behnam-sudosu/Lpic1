@@ -17,8 +17,10 @@ sudo apt install lightdm
 
 ```bash
 dpkg-reconfigure lightdm
-sudo systemctl suspend
 sudo apt install gnome-session-flashback
+
+# this cammand for sleep your system
+sudo systemctl suspend
 ```
 ```bash
 sudo systemctl disable gdm

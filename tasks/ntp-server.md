@@ -35,6 +35,7 @@ systemctl status ntp.service
 
 # show information
 ntpq -p
+
 vim /etc/ntp.conf
     pool 192.168.1.100 iburst
     pool ir.pool.ntp.org iburst
@@ -46,7 +47,7 @@ systemctl restart ntp
 ### client
 
 ```bash
-apt update && apt install ntp
+apt install ntp
 vim /etc/ntp.conf
     poll 0.ubuntu.pool.ntp.org iburst
     pool 192.168.1.100 iburst

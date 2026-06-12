@@ -47,7 +47,7 @@ also you can add nameserver to /etc/netplan/*.yaml too
 ### route
 
 ```bash
-use route insted of getway
+use route insted of gateway
 routes:
     - to: default
     via: 192.168.0.1

@@ -16,6 +16,7 @@ cd /etc/fail2ban/filter.d ===>> config file all application
 ```bash
 # check service is active
 systemctl status fail2ban.service
+
 # enable service
 systemctl enabled fail2ban.service
 ```

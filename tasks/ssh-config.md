@@ -1,6 +1,6 @@
 # ssh
 
-### install
+### install package
 ```bash
 apt install openssh-server -y
 apt install openssh-client -y
@@ -11,6 +11,7 @@ public key ===>> for server
 ---
 
 ### generate sshkey nad copy to server
+
 ```bash
 ssh-keygen ===>> generate ssh keygen
 ssh-copy-id milad@192.168.1.4
@@ -54,6 +55,11 @@ Host *
 ```bash
 /home/behnam/.ssh/config
 	include /home/behnam/.ssh/config.d/*.conf ===>> this goese check all
+```
+```bash
+save the file
+```
+```bash
 mkdir config.d
 vim mci-conf
 	Host databases-1
@@ -83,6 +89,9 @@ vim bmi.conf
 		HostName 192.168.1.4
 		User behnam
 		Port 22
+```
+```bash
+save the file
 ```
 
 ---
@@ -175,6 +184,9 @@ vim ~/.ssh/config.d/*.conf
 	HostName github.com
 	User git
 	IdnetityFile ~/.ssh/id_ed25519_github
+```
+```bash
+save the file
 ```
 
 ---

@@ -15,10 +15,13 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 
 ```bash
 git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/backup.oh-my-zsh
+
 # all file is here
 ~/backup.oh-my-zsh
+
 # change name to
 ~/.oh-my-zsh
+
 # command for execute
 sh ~/.oh-my-zsh/tools/install.sh --unattended
 ```

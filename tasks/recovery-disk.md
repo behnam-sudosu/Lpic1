@@ -7,8 +7,8 @@ fsck ===>> check disk for error
     check inod
     check bad sector
     directory structure
-
-
+```
+```bash
 fsck file system check ===>> use for ext
 fsck.ext4 /dev/sdb1 ===>> befor that unmunt
 fsck -t ext4 /dev/sdb1 ===>> check disk

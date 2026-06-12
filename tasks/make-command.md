@@ -1,4 +1,4 @@
-# make command
+# make new command
 
 ```bash
 mkdir commands

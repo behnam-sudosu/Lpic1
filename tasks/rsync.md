@@ -1,5 +1,7 @@
 # rsync
 
+### rsysnc help for copy from local to server
+
 ```bash
 sudo apt install rsync
 copy from server

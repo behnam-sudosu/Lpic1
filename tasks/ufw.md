@@ -7,7 +7,7 @@ vim /etc/default/ufw
 
 ---
 
-### active
+### enable ufw
 
 ```bash
 sudo ufw version
