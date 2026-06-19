@@ -1,9 +1,9 @@
-# cron and at  
+# cron and at
 
 ### ANACRON
 
 ```bash
-#for desktop
+# for desktop
 anacron
 ```
 
@@ -11,7 +11,7 @@ anacron
 
 ### cron
 
- 	vim /etc/crontab
+vim /etc/crontab
 
 ```bash
 # you can edit and set
@@ -20,43 +20,43 @@ minutes - hour - day of month - month - day of week - name user - command or dir
 	*        *          *          *          *           root        /home/behnam/ping.sh
 */1
 */2
-#and
-#15,22,56 defrence minutes
+# and
+# 15,22,56 defrence minutes
 ,
 
-#until
-#15-26 between 15-26
+# until
+# 15-26 between 15-26
 -
 
-#when server reboot do something
+# when server reboot do something
 @reboot
 
-#do daily
+# do daily
 @daily
 
-#do weekly
+# do weekly
 @weekly
 
-#do monthly
+# do monthly
 @monthly
 
-#do yearly
+# do yearly
 @yearly
 ```
 ```bash
-#for desktop linux and only root can make cron
+# for desktop linux and only root can make cron
 unacron
 
-#set cron for user
+# set cron for user
 crontab -e
 
-#these are vise versa and if server reboot the cron dosn't excute but anacron excute
+# these are vise versa and if server reboot the cron dosn't excute but anacron excute
 cron and anacron
 
-#first you have to write script then put it in cron
+# first you have to write script then put it in cron
 script
 
-#you can set daily but not important when
+# you can set daily but not important when
 /etc/cron.d
 
 /etc/cron.daly
@@ -73,12 +73,12 @@ script
 cat /var/log/syslog | grep -i cron
 ```
 
----  
+---
 
-### at  
+### at
 
 ```bash
-#use only one time
+# use only one time
 at
 
 apt install at
@@ -99,24 +99,24 @@ at now + 1 hour
 at now + 1 mounth
 at now + 1 year
 
-#for run your script
+# for run your script
 at
 	bash /tmp/ping.sh
 
-#4 o'clock
+# 4 o'clock
 at teatime
 
-#12 o'clock
+# 12 o'clock
 at midnight
 
-#show all at you set
+# show all at you set
 atq
 
-#remove at
+# remove at
 atrm 
 ```
 
----  
+---
 
 ### add user cron and at
 
@@ -127,15 +127,15 @@ atrm
 /etc/at.deny ===>> allow user to make at
 ```
 ```bash
-#who can make cron
+# who can make cron
 vim /etc/cron.allow
 	milad
-	behnam  
+	behnam
 ```
 
----  
+---
 
-### when you take server for the first time check this  
+### when you take server for the first time check this
 
 ```bash
 atq

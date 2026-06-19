@@ -28,12 +28,12 @@ network is unreachable ===>> biron nemire
 destination host unreachable ===>> biron mire vali nemirese
 ```
 
----  
+---
 
-### set DNS  
+### set DNS
 
 ```bash
-#set DNS
+# set DNS
 /etc/resolv.conf
 
 nameserver 8.8.8.8
@@ -62,7 +62,7 @@ nameserver 94.140.14.14
 nameserver 94.140.15.15
 ```
 
-## lock resolv.conf
+### lock resolv.conf
 
 ```bash
 sudo chattr +i /etc/resolv.conf
@@ -71,6 +71,7 @@ sudo chattr -i /etc/resolv.conf
 
 ---
 
+### more information
 
 ```bash
 nat = network address transportation
@@ -81,7 +82,7 @@ DNS server ===>> change IP to name
 /etc/network/interfaces ===>> debian
 /etc/sysconfig/network-scripts/ifcfg-ens37 ===>> centos
 
-#if you set here first come here and check then go /etc/resolve.conf
+# if you set here first come here and check then go /etc/resolve.conf
 /etc/hosts
 	192.168.1.100 google.com
 	192.168.1.100 nginx.com
@@ -95,7 +96,7 @@ DOT ===>> DNS over tls
 whois domain ===>> Get whois information for domains
 ```
 
----  
+---
 
 ### host
 
@@ -104,9 +105,9 @@ host ===>> go and ask what is the ip of google.com
 host yahoo.com ===>> show IP
 ```
 
----  
+---
 
-### commands  
+### commands
 
 ```bash
 ip -br a ===>> show IP in systm
@@ -116,9 +117,9 @@ curl myip-wtf/json ===>> show your IP
 curl google.com === show IP google.com
 ```
 
----  
+---
 
-### ifconfig  
+### ifconfig
 
 ```bash
 apt install net-tools
@@ -129,7 +130,7 @@ ifconfig -s ===>> summery
 ifconfig ens37 192.168.80.200 ===>> set static IP
 ifconfig ens37 netmask 255.255.255.0 ===>> set static netmask
 ifconfig ens37 192.168.80.200 netmask 255.255.255.0
-ifconfig hw ens37 (mac address) ===>> change mac address  
+ifconfig hw ens37 (mac address) ===>> change mac address
 ifconfig ens38 up
 ifconfig ens38 down
 ```
@@ -146,7 +147,7 @@ ifup eens37
 
 ---
 
-### route  
+### route
 
 ```bash
 route ===>> show routing table
@@ -158,24 +159,24 @@ route add default gw 192.168.1.100 dev ens37
 route del default gw 192.168.1.100 dev ens37
 ```
 
----  
+---
 
-### ip  
+### ip
 
 ```bash
 ip address show ===>> show interface
 ip addr sh
 ip a s
-ip a  
+ip a
 ```
 ```bash
 ip addr add 192.168.1.100/24 dev ens37 ===>> add ip
 ip addr del 192.168.1.100/24 dev ens37 ===>> delete ip
 ```
-```bash  
+```bash
 ip link show ===>> show disable and enable
 ip link set ens37 down
-ip link set ens37 up  
+ip link set ens37 up
 ```
 ```bash
 ip route show
@@ -187,9 +188,9 @@ ip route add default via 192.168.1.1 dev ns37
 ip route del default via 192.168.1.1 dev ns37
 ```
 
----  
+---
 
-### ping  
+### ping
 
 ```bash
 apt install iputils-ping
@@ -199,12 +200,12 @@ ping -c 3
 ping -i 0.5 ===>> second
 ping -I ens37 ===>> choose interface give me ping
 ping -a  ===>> alarm
-ping -s ===>> size  
+ping -s ===>> size
 ```
 
----  
+---
 
-### troubleshoot  
+### troubleshoot
 
 ```bash
 traceroute ===>> show path
@@ -214,16 +215,16 @@ tracepath ===>> show path
 tracepath 8.8.8.8
 
 mtr ===>> show path
-mtr yahoo.com  
+mtr yahoo.com
 ```
 
----  
+---
 
-### netstat  
+### netstat
 
 ```bash
 ESTABLISHED ===>> conected
-LISTEN ===>> ready for connect  
+LISTEN ===>> ready for connect
 ```
 ```bash
 netstat ===>> show all connection in your network
@@ -234,12 +235,12 @@ netstat -au ===>> udp
 netstat -l ===>> list
 netstat -n ===>> port number
 netstat -p ===>> pid  
-netstat -rn = like a route -n  
+netstat -rn = like a route -n
 ```
 
 ---
 
-### ss  
+### ss
 
 ```bash
 ss -a ===>> all
@@ -250,9 +251,9 @@ ss -n ===>> port
 s -p ===>> pid  
 ```
 
----  
+---
 
-### telnet  
+### telnet
 
 ```bash
 telnet 192.168.1.100 22 ===>> show port 22 is exist or open on server and application is active
@@ -263,40 +264,42 @@ telnet google.com 80 ===>> connect to port 80 google.com and you know port 80 is
 
 ---
 
-# nc or netcat
+### nc or netcat
 
 ```bash
 netcat ===>> open port in linux
 
-#server
+# server
 netcat -l 8090
 
-#client
+# client
 telnet IP_SERVER 8090
 ```
 
+---
 
-### transfer file  
+### transfer file
 
-server
+#### server
 
 ```bash
 nc -l 8080
 nc -l -p 9000 > file1.txt ===>> file transfer
 ```
 
-client
+#### client
 
 ```bash
 nc server_IP 9000 < file1.txt ===>> file transfer
 ```
+```bash
 nc -l 8990 ===>> port you can talk (net cat)
 	nc 8990 (ip destination)
+```
 
+---
 
----  
-
-### nslookup  
+### nslookup
 
 ```bash
 nslookup google.com
@@ -305,12 +308,12 @@ nslookup @8.8.8.8.8 google.com
 nslookup
 	server 1.1.1.1 ===>> change dafault nslookup server
 	8.8.8.8
-	google.com  
+	google.com
 ```
 
----  
+---
 
-### dig  
+### dig
 
 ```bash
 dig ===>> show DNS information and records
