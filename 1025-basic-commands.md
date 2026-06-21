@@ -129,6 +129,9 @@ scp ===>> copy file or directory
 scp mydir.tar behnam@192.168.1.100:/tmp
 scp behnam@192.168.1.100:/tmp/mydir.tar .
 scp -r mydir behnam@192.168.1.100:/tmp ===>> directory
+
+# scp if you have publickey and not log with password
+sudo scp -P4012 -o IdentitiesOnly -i ~/.ssh/id_bhnm /media/behnam/A/iso-file debian@192.168.1.5:/home/debian/iso-file
 ```
 
 ---
