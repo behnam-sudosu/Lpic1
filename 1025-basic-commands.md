@@ -22,6 +22,7 @@ ls 1*.txt
 ls 1?.txt
 ls f* ===>> only start with f
 ls ! ===>> bar reverse
+ls -d .*/
 ```
 
 ---
