@@ -2,6 +2,7 @@
 
 ```bash
 ip -br a
+ip -br r
 netpalan try
 nat ===>> network address translation
 IP ===>> internet protocol
