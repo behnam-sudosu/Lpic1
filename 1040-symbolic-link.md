@@ -1,38 +1,38 @@
-# link  
+# link
 
 ```bash
 symbolic link ===>> shortcut, pointer
 ```
 
-### hardlink  
+### hardlink
 
 ```bash
 defrence
 	1-inod is same
 	2-you can't link direcroty just file
 	3-change permision
-	4-if delete original file the link of file work it  
+	4-if delete original file the link of file work it
 ```
 
 ```bash
-#show inod
+# show inod
 df -i
 
 ln FILE_SOURCE LOCATION_OF_LINK
 
-#unlink
+# unlink
 unlink hardlink
 
 vim file1
 	devops
 
-#show innod
+# show innod
 ls -li
 ```
 
----  
+---
 
-### softlink  
+### softlink
 
 ```bash
 difrence
@@ -43,13 +43,13 @@ difrence
 ```
 
 ```bash
-#softlink
+# softlink
 ls -s FILE_SOURCE LOCATION_OF_LINK
 ln -s file1
 
-#unlink
+# unlink
 unlink softlink
 
-#you can rm file also
+# you can rm file also
 rm FILE NAME
 ```
