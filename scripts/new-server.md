@@ -1,3 +1,8 @@
+# install and configure new server
+
+### copy this text to new file
+
+```bash
 #!/bin/bash
 
 ##################################################################
@@ -184,4 +189,4 @@ cat /etc/ntpsec/ntp.conf | grep asia.pool
 echo -e "############################################################\nDONE\n############################################################"
 
 countdown5
-
+```
